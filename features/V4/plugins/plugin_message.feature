@@ -73,7 +73,7 @@ Feature: Asynchronous message interactions with plugin contents
     When the verification is run
     Then the verification will NOT be successful
     And the verification results will contain a "Body had differences" error
-    And the verification output will contain "row: 1, column: 1 -> Expected 'abc' to match a number"
+    And the verification output will contain "column: 1 -> Expected 'abc' to match a number"
 
   @plugin:avro
   Scenario: Builds a message interaction with the avro plugin

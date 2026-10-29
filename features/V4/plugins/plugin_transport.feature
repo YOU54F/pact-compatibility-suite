@@ -116,7 +116,7 @@ Feature: Synchronous messages over a plugin transport
     Then the gRPC call will fail with status "FAILED_PRECONDITION"
     When the pact test is done
     Then the mock server status will be mismatches
-    And the mismatches will contain a mismatch with error "$.name -> Expected  to not be empty"
+    And the mismatches will contain a mismatch with error "Expected  to not be empty"
 
   @plugin:protobuf @transport:grpc
   Scenario: The gRPC mock server reports a request that was not received
