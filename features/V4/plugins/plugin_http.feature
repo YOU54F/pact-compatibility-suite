@@ -57,7 +57,7 @@ Feature: HTTP interactions with plugin contents
     And a "POST" request is made to "/matt" with content type "application/matt" and body "MATTnopeMATT"
     And the pact test is done
     Then the mock server status will be mismatches
-    And the mismatches will contain a mismatch with error "Expected 'hello', but received 'nope'"
+    And the mismatches will contain a mismatch with error "expected body 'hello' is not equal to actual body 'nope'"
 
   @plugin:matt
   Scenario: Verifies a provider using the matt plugin
